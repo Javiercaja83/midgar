@@ -1,4 +1,10 @@
-let array = [1234,  "hola", true]
-console.log(array[0])
-console.log(array[1])
-console.log(array[2])
+//Este es el elemento <ul>
+let ulNombres = document.getElementById("ulNombres")
+// Esta es la lista en foram de array. Inicia vacia
+let lista= []
+//este es el input donde se ponen los nombres a agregar
+let inNombre = document.getElementById("inNombre")
+function agregar() 
+{
+    alert("Agregado")
+}
