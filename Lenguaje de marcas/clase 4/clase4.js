@@ -6,5 +6,13 @@ let lista= []
 let inNombre = document.getElementById("inNombre")
 function agregar() 
 {
-    alert("Agregado")
+    if(inNombre.value){
+    //Meter el valor introducido en el array
+    lista.push(inNombre.value)
+    //Ampliar la etiqueta <ul> en el array
+    // esto equivale a "<li>" + inNombre.value + "</li>"
+    ulNombres.innerHTML += `<li>${inNombre.value}</li>`
+    //vaciar input
+    inNombre.value = ""
+    }
 }
