@@ -80,6 +80,8 @@ public class Personaje {
             default:
                 break;
             }
+        
+            sc.close();
         }
     
     
@@ -87,4 +89,5 @@ public class Personaje {
     private void sumarFuerza(int fuerza) {
         this.fuerza = fuerza + 1;
     }
+  
 }

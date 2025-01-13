@@ -15,10 +15,20 @@ function agregar()
     //vaciar input
     inNombre.value = ""
     }
+//el caracter ` sirve hacer una referencia de Javascript
+
 }
 function borrar() {
     ulNombres.innerHTML = ""
     lista = []
-//investigar en w3Schools como eliminar un elemento html en javascript, siendo esta splice(), que sirve para agregar, sustituir o borrar
-//comprobar la lsita el nombre introducido dentro del array y eliminarlo dentro del array y el ul
+
+    //investigar en w3Schools como eliminar un elemento html en javascript, siendo esta splice(), que sirve para agregar, sustituir o borrar
+
+    //comprobar la lista el nombre introducido dentro del array y eliminarlo dentro del array y el ul
+    for (i = 0; i < lista.length; i++) {
+        if(lista[i] == " "){
+            lista.splice(i, 1);
+        i--;
+      } 
+    }
 }
