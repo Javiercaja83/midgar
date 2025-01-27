@@ -21,6 +21,31 @@ import java.time.LocalTime;
     public String toString() {
         return "Vuelo: numeroVuelo=" + numeroVuelo + ", origen=" + origen + ", destino=" + destino + ", fechaSalida="
                 + fechaSalida + ", horaSalida=" + horaSalida + ", estado=" + estado;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((numeroVuelo == null) ? 0 : numeroVuelo.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Vuelo other = (Vuelo) obj;
+        if (numeroVuelo == null) {
+            if (other.numeroVuelo != null)
+                return false;
+        } else if (!numeroVuelo.equals(other.numeroVuelo))
+            return false;
+        return true;
     } 
     
     

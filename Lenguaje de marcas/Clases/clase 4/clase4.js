@@ -2,6 +2,8 @@
 let ulNombres = document.getElementById("ulNombres")
 // Esta es la lista en foram de array. Inicia vacia
 let lista= []
+//Este es el parrafo donde se almacena el numero de personas
+let recuentis = document.getElementById("recuento")
 //este es el input donde se ponen los nombres a agregar
 let inNombre = document.getElementById("inNombre")
 function agregar() 
@@ -14,21 +16,35 @@ function agregar()
     ulNombres.innerHTML += `<li>${inNombre.value}</li>`
     //vaciar input
     inNombre.value = ""
+    actualizarContador
     }
 //el caracter ` sirve hacer una referencia de Javascript
 
 }
-function borrar() {
-    ulNombres.innerHTML = ""
-    lista = []
-
-    //investigar en w3Schools como eliminar un elemento html en javascript, siendo esta splice(), que sirve para agregar, sustituir o borrar
-
-    //comprobar la lista el nombre introducido dentro del array y eliminarlo dentro del array y el ul
-    for (i = 0; i < lista.length; i++) {
-        if(lista[i] == " "){
-            lista.splice(i, 1);
-        i--;
-      } 
+function cargarlista()
+{
+    for(let i = 0; i <lista.length; i++) {
+        
     }
+}
+function eliminar()
+{
+    if (inNombre.value){
+        for (let i = 0; i < lista.length; i++) {
+            if(inNombre.value == lista[i])  {
+                //preguntamos si el nombre introducido coincide con el elemento "i"
+                lista.splice(i, 1);
+                ulNombres.innerHTML = ""
+                cargarLista()
+                i--
+            }
+
+        
+      } 
+    
+    }
+function actualizarContador()
+{
+
+}
 }

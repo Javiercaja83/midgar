@@ -43,13 +43,7 @@ public class RegistroEventos {
 
                 case "2":
                     System.out.println("\nEventos registrados:");
-                    if (eventos.isEmpty()) {
-                        System.out.println("No hay eventos registrados.");
-                    } else {
-                        for (int i=0; i<(contador-1); i++) {
-                            System.out.println(eventos[i]);
-                        }
-                    }
+                 
                     break;
 
                 case "3":

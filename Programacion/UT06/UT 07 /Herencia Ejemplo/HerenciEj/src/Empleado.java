@@ -1,4 +1,4 @@
-public class Empleado extends Persona{
+public class Empleado extends Trabajador {
     private int sueldo, impuestos;
 
     public Empleado(String nombre, String puesto, String direccion, int felefono, int nss, int sueldo, int impuestos) {

@@ -1,4 +1,4 @@
-public class Consultor extends Persona{
+public class Consultor extends Trabajador {
     private int tarifas, horas;
 
     public Consultor(String nombre, String puesto, String direccion, int felefono, int nss, int tarifas, int horas) {

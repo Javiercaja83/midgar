@@ -1,0 +1,6 @@
+public enum Estado {
+    PENDIENTE, 
+    EN_PROGRESO, 
+    COMPLETADA, 
+    CANCELADA, PROGRAMADO, CANCELADO, DEMORADO
+}

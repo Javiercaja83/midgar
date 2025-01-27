@@ -1,8 +1,8 @@
-public class Persona {
+public class Trabajador {
     private String nombre, puesto, direccion;
     private int felefono, nss;
     
-    public Persona(String nombre, String puesto, String direccion, int felefono, int nss) {
+    public Trabajador(String nombre, String puesto, String direccion, int felefono, int nss) {
         this.nombre = nombre;
         this.puesto = puesto;
         this.direccion = direccion;
