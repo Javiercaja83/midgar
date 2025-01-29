@@ -28,17 +28,6 @@ Sobrescribe el método equals para comparar productos electrónicos por su codig
     public double calcularDescuento(double descuento, double desFinal){
         return super.calcularDescuento(descuento) - desFinal;
     }
-    
-   
-
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + garantia;
-        return result;
-    }
 
 
     @Override
