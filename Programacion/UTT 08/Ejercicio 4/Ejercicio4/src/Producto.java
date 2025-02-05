@@ -19,5 +19,12 @@ public abstract class Producto {
         double costo = 0;
         return costo;
         }
+
+    @Override
+    public String toString() {
+        return "Producto [nombre=" + nombre + ", peso=" + peso + ", alto=" + alto + ", ancho=" + ancho
+                + ", profundidad=" + profundidad + ", volumen()=" + volumen() + "]";
+    }
     
+        
     }

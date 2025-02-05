@@ -10,12 +10,28 @@ public class Electrodomestico extends Producto{
 
     @Override
     public double calcularCostoEnvio(){
-        double costo;
-        costo = (peso * 10)+(volumen() *50);
-        if(esFragil==true){
-            costo = costo + (costo * 20);
+        if (esFragil) {
+            return (peso * 10)+(volumen() *50)  * 0.2;
         }
-    return costo;
+        else {
+            return (peso * 10)+(volumen() *50);
+        }
     }
 
+    public Electrodomestico(String nombre, double peso, double alto, double ancho, double profundidad, Tipo tipo,
+            boolean esFragil) {
+        super(nombre, peso, alto, ancho, profundidad);
+        this.tipo = tipo;
+        this.esFragil = esFragil;
+    }
+
+    @Override
+    public String toString() {
+        return "Electrodomestico [nombre=" + nombre + ", tipo=" + tipo + ", peso=" + peso + ", esFragil=" + esFragil
+                + ", alto=" + alto + ", ancho=" + ancho + ", profundidad=" + profundidad + ", volumen()=" + volumen()
+                + "]";
+    }
+
+    
+    
 }
