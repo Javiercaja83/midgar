@@ -10,13 +10,18 @@ public class App {
         } catch (ArithmeticException e) {
             System.out.println("Error");
         }
-
+        
+    
         try {
             String a = null;
             //null value
             System.out.println(a.charAt(0));
         } catch (NullPointerException e) {
             System.out.println("NullPointerException..");
+        } catch (ArithmeticException e) {
+            System.out.println("Cant divide a numbre by 0");
         }
-    }
+    
+    
+}
 }
