@@ -1,9 +1,7 @@
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
 
 public class App {
 
@@ -20,8 +18,6 @@ public class App {
         System.out.println("Error");
         }
     }
-    
-
     private static void dividirPorCero() throws ArithmeticException {
         try {
             int a = 10;
@@ -32,7 +28,6 @@ public class App {
             System.out.println("Error");
         }
     }
-
     private static void nullPointerLanza() throws NullPointerException{
         try {
         String a = null;
@@ -54,4 +49,5 @@ public class App {
             nombreArchivo = "rutaDefecto";
         }
     }
+
 }
