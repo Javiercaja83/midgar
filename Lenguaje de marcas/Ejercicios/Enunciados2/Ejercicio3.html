@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Coloridas</title>
+    <link rel="stylesheet" href="Ejercicio3.css">
+</head>
+<body>
+
+<h1>Crear Nota</h1>
+
+<input type="text" id="textoNota" placeholder="Escribe tu nota aquí...">
+<input type="color" id="colorFuente" value="#000000">
+<label for="colorFuente">Color de la Fuente</label><br>
+<input type="color" id="colorFondo" value="#FFFFFF">
+<label for="colorFondo">Color del Fondo</label><br>
+<button onclick="agregarNota()">Agregar</button>
+
+<div id="notasContainer"></div>
+
+<script src="Ejercicio3.js"></script>
+
+</body>
+</html>
