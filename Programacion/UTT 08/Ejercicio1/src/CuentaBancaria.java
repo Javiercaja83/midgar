@@ -1,9 +1,10 @@
 
-public class CuentaBancaria {
+public class CuentaBancaria implements Registable{
     private int saldo;
-
-    public CuentaBancaria(int saldo) {
+    private String IBAN;
+    public CuentaBancaria(int saldo, String IBAN) {
         this.saldo = saldo;
+        this.IBAN = IBAN;
     }
     
     public int retirarDinero(int cantidad) throws SaldoException{
@@ -15,6 +16,19 @@ public class CuentaBancaria {
        }
 
        return saldoRestante;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public String getIBAN() {
+        return IBAN;
+    }
+
+    @Override
+    public String Reg() {
+        return "REG2_" + IBAN;
     }
 
     
