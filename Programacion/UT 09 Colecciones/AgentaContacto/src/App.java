@@ -58,18 +58,18 @@ public class App {
                 
         }
                 
-        public static void ConsultarContacto(HashMap<Integer, String> Agenda, Scanner scanner)thows Exception{
+        public static void ConsultarContacto(HashMap<Integer, String> Agenda, Scanner scanner)throws Exception{
         System.out.println("Ingrese el numero");
         try {
             Integer numero = Integer.parseInt(scanner.nextLine());
-
+            if (Agenda.containsKey(numero)) {
+                System.out.println( numero + " Si existe, " + Agenda.get(numero));
+    
+            }
         } catch (Exception e) {
             throw new Exception();
         }
-        if (Agenda.containsKey(numero)) {
-            System.out.println( numero + " Si existe, " + Agenda.get(numero));
-
-        }
+    
     }
 
     public static void MostrarTodos(HashMap<Integer, String> Agenda){
