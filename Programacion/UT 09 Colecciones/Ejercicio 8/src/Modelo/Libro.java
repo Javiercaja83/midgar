@@ -10,10 +10,6 @@ public class Libro  implements Comparable<Libro>{
         this.isbn = isbn;
     }
 
-
-    
-
-
     public String getNumeroClasificacion() {
         return numeroClasificacion;
     }
